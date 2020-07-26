@@ -30,7 +30,14 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.List;
 
 import team.fourty.seven.learnit.R;
@@ -153,11 +160,50 @@ public class StudyMapsActivity extends MenuActivity implements OnMapReadyCallbac
         googleURL.append("&radius=").append(ProximityRadius);
         googleURL.append("&type=").append(nearbyPlace);
         googleURL.append("&sensor=true");
-        googleURL.append("&key=" + getResources().getString(R.string.google_maps_key));
+
+
+        String googleKey = getGoogleAPIkey();
+
+        googleURL.append("&key=" + googleKey);
 
         Log.d("GoogleMapsActivity", "url = " + googleURL.toString());
 
         return googleURL.toString();
+    }
+
+    private String getGoogleAPIkey() {
+        String json ="";
+        String googleKey = "";
+        try {
+            InputStream is = this.getAssets().open("APIs/api.json");
+
+            BufferedReader buffer = new BufferedReader(new InputStreamReader(is));
+            StringBuilder stringBuilder = new StringBuilder();
+            String line = buffer.readLine();
+
+            while (line != null){
+                stringBuilder.append(line);
+                line = buffer.readLine();
+            }
+
+            buffer.close();
+            json = stringBuilder.toString();
+
+            JSONArray jArray = new JSONArray(json);
+            JSONObject obj = jArray.getJSONObject(0);
+
+            googleKey = obj.getString("GoogleMapKey");
+
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+
+        return googleKey;
     }
 
 

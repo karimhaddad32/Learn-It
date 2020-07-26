@@ -9,7 +9,7 @@ import team.fourty.seven.learnit.R;
 
 public class Splash extends AppCompatActivity {
 
-    private static int SPLASH_TIME = 2000;
+    private static int SPLASH_TIME = 1000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

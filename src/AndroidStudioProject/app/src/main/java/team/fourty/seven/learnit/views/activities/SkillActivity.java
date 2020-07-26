@@ -28,7 +28,6 @@ public class SkillActivity extends MenuActivity implements View.OnClickListener,
 
 
     private static final String TAG = "SkillActivity";
-    private final String youtubeKey = "AIzaSyD0rsQcbOCn1D_D79gjvVTc1XDgNoMEFxQ";
 
     private RecyclerView eBookRecycler;
     private RecyclerView youtubeVideoRecycler;

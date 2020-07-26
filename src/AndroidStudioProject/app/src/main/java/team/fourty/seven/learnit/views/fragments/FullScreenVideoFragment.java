@@ -1,6 +1,7 @@
 package team.fourty.seven.learnit.views.fragments;
 
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
@@ -22,6 +23,15 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerFragment;
 import com.google.android.youtube.player.YouTubePlayerSupportFragment;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
 import team.fourty.seven.learnit.R;
 
 /**
@@ -29,7 +39,7 @@ import team.fourty.seven.learnit.R;
  */
 public class FullScreenVideoFragment extends DialogFragment {
 
-    private final String YOUTUBE_API_KEY = "AIzaSyD0rsQcbOCn1D_D79gjvVTc1XDgNoMEFxQ";
+    private String YouTubeKey = "";
     private final String YOUTUBE_VIDEO_TIMER = "videoTimer";
     private YouTubePlayer youTubePlayer;
     private String videoId;
@@ -64,7 +74,9 @@ public class FullScreenVideoFragment extends DialogFragment {
         FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
         transaction.add(R.id.youtubeFrame, youTubePlayerSupportFragment).commit();
 
-        youTubePlayerSupportFragment.initialize(YOUTUBE_API_KEY, new YouTubePlayer.OnInitializedListener() {
+
+        YouTubeKey = getYoutubeKey();
+        youTubePlayerSupportFragment.initialize(YouTubeKey, new YouTubePlayer.OnInitializedListener() {
 
 
 
@@ -113,6 +125,41 @@ public class FullScreenVideoFragment extends DialogFragment {
         });
 
         return view;
+    }
+
+    private String getYoutubeKey() {
+        String json ="";
+        String youtubeKey = "";
+        try {
+            InputStream is = this.getActivity().getAssets().open("APIs/api.json");
+
+            BufferedReader buffer = new BufferedReader(new InputStreamReader(is));
+            StringBuilder stringBuilder = new StringBuilder();
+            String line = buffer.readLine();
+
+            while (line != null){
+                stringBuilder.append(line);
+                line = buffer.readLine();
+            }
+
+            buffer.close();
+            json = stringBuilder.toString();
+
+            JSONArray jArray = new JSONArray(json);
+            JSONObject obj = jArray.getJSONObject(0);
+
+            youtubeKey = obj.getString("YoutubeKey");
+
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+
+        return youtubeKey;
     }
 
     @Override

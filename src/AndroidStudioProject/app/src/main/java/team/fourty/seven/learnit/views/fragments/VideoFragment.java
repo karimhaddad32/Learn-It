@@ -15,6 +15,16 @@ import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerSupportFragment;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
 import team.fourty.seven.learnit.R;
 import team.fourty.seven.learnit.views.activities.SkillActivity;
 import team.fourty.seven.learnit.models.YoutubeVideo;
@@ -25,7 +35,7 @@ import team.fourty.seven.learnit.models.YoutubeVideo;
  */
 public class VideoFragment extends Fragment implements YouTubePlayer.PlaybackEventListener, YouTubePlayer.PlayerStateChangeListener {
 
-    private final String YOUTUBEKEY = "AIzaSyD0rsQcbOCn1D_D79gjvVTc1XDgNoMEFxQ";
+    private String YouTubeKey= "";
     private YouTubePlayerSupportFragment youTubePlayerSupportFragment;
     private String videoId;
     private String title;
@@ -89,7 +99,10 @@ public class VideoFragment extends Fragment implements YouTubePlayer.PlaybackEve
             FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
             transaction.add(R.id.videoView, youTubePlayerSupportFragment).commit();
 
-            youTubePlayerSupportFragment.initialize(YOUTUBEKEY, new YouTubePlayer.OnInitializedListener() {
+            YouTubeKey = getYoutubeKey();
+
+
+            youTubePlayerSupportFragment.initialize(YouTubeKey, new YouTubePlayer.OnInitializedListener() {
                 @Override
                 public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean isRetrieved) {
                     if(!isRetrieved && videoId != null) {
@@ -120,6 +133,41 @@ public class VideoFragment extends Fragment implements YouTubePlayer.PlaybackEve
 
 
         return view;
+    }
+
+    private String getYoutubeKey() {
+        String json ="";
+        String youtubeKey = "";
+        try {
+            InputStream is = this.getActivity().getAssets().open("APIs/api.json");
+
+            BufferedReader buffer = new BufferedReader(new InputStreamReader(is));
+            StringBuilder stringBuilder = new StringBuilder();
+            String line = buffer.readLine();
+
+            while (line != null){
+                stringBuilder.append(line);
+                line = buffer.readLine();
+            }
+
+            buffer.close();
+            json = stringBuilder.toString();
+
+            JSONArray jArray = new JSONArray(json);
+            JSONObject obj = jArray.getJSONObject(0);
+
+            youtubeKey = obj.getString("YoutubeKey");
+
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+
+        return youtubeKey;
     }
 
     @Override
