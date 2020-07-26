@@ -48,3 +48,7 @@ output.json
 #NDK
 obj/
 .externalNativeBuild
+
+#APIs
+
+src/AndroidStudioProject/app/src/main/assets/APIs/api.json
