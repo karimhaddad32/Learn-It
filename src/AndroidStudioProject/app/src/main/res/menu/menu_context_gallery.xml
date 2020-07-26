@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemEntryEdit"
+        android:title="@string/edit"
+        android:enabled="false"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/itemEntryDelete"
+        android:title="@string/delete"/>
+
+</menu>
+
+<!--
+Sources for context menu:
+https://code.tutsplus.com/tutorials/android-sdk-context-menus-mobile-8845
+https://stackoverflow.com/questions/26466877/how-to-create-context-menu-for-recyclerview
+-->

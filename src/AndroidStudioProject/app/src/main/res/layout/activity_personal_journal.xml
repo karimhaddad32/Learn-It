@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.1"
+            android:paddingTop="60dp">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/criticalThinkingTab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1.0"
+                    android:onClick="tabHandler"
+                    android:text="@string/txtCriticalThinkingV"
+                    android:padding="10dp"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_half_corners_left"/>
+
+                <Button
+                    android:id="@+id/lawTab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1.0"
+                    android:onClick="tabHandler"
+                    android:text="@string/txtLawV"
+                    android:padding="10dp"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_half_corners_left"/>
+
+                <Button
+                    android:id="@+id/codingTab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1.0"
+                    android:onClick="tabHandler"
+                    android:text="@string/txtCodingV"
+                    android:padding="10dp"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_half_corners_left"/>
+
+                <Button
+                    android:id="@+id/technologyTab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1.0"
+                    android:onClick="tabHandler"
+                    android:text="@string/txtTechnologyV"
+                    android:padding="10dp"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_half_corners_left"/>
+
+                <Button
+                    android:id="@+id/paintingTab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1.0"
+                    android:onClick="tabHandler"
+                    android:text="@string/txtPaintingV"
+                    android:padding="10dp"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_half_corners_left"/>
+
+                <Button
+                    android:id="@+id/sculptingTab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1.0"
+                    android:onClick="tabHandler"
+                    android:text="@string/txtSculptingV"
+                    android:padding="10dp"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_half_corners_left"/>
+
+                <Button
+                    android:id="@+id/musicTab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1.0"
+                    android:onClick="tabHandler"
+                    android:text="@string/txtMusicV"
+                    android:padding="10dp"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_half_corners_left"/>
+
+                <Button
+                    android:id="@+id/selfDefenseTab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1.0"
+                    android:onClick="tabHandler"
+                    android:text="@string/txtSelfDefenseV"
+                    android:padding="10dp"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_half_corners_left"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.9"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"/>
+
+    </LinearLayout>
+
+</TabHost>

@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">LearnIt</string>
+    <string name="leftSideOfBrain">Left Side</string>
+    <string name="rightSideOfBrain">Right Side</string>
+    <string name="btnGoBack">Go Back</string>
+    <string name="txtChooseASkill">Choose A Skill</string>
+    <string name="txtCriticalThinking">Critical Thinking</string>
+    <string name="txtLaw">Law</string>
+    <string name="txtCoding">Coding</string>
+    <string name="txtTechnology">Technology</string>
+    <string name="txtPainting">Painting</string>
+    <string name="txtSculpting">Sculpting</string>
+    <string name="txtMusic">Music</string>
+    <string name="txtSelfDefense">Self Defense</string>
+    <string name="btnLearnSkill">Learn Skill </string>
+    <string name="btnSkillJournal">Skill Journal </string>
+    <string name="btnStudyPlace">Find Study Place </string>
+    <string name="txtChooseASide">Choose A Side To Improve</string>
+    <string name="item_learn_skill">Learn Skill</string>
+    <string name="item_main_menu">Main Menu</string>
+    <string name="item_find_study_place">Find Study Place</string>
+    <string name="item_skill_journal">Skill Journal</string>
+
+
+    <string name="txtCriticalThinkingV">C\nr\ni</string>
+    <string name="txtLawV">L\na\nw</string>
+    <string name="txtCodingV">C\no\nd</string>
+    <string name="txtTechnologyV">T\ne\nc</string>
+    <string name="txtPaintingV">P\na\ni</string>
+    <string name="txtSculptingV">S\nc\nu</string>
+    <string name="txtMusicV">M\nu\ns</string>
+    <string name="txtSelfDefenseV">S\nD\ne</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txtDescription">Here Lies the Description of the skill</string>
+    <string name="txtMoreVideos">More Videos</string>
+    <string name="txtMoreEbooks">More eBooks</string>
+
+
+    <!-- LAW-RELATED STRINGS -->
+    <!-- TEMP: CHANGE LAYOUT AND EDIT -->
+    <string name="txtDescriptionLaw">We live by laws we don’t even know: learn the basics of law and use that knowledge in your life!
+        Law is a system of rules that are created and enforced through social or governmental institutions to regulate behavior. - Wikipedia</string>
+
+
+    <!-- TECHNOLOGY-RELATED STRINGS -->
+    <!-- TEMP: CHANGE LAYOUT AND EDIT -->
+    <string name="txtDescriptionTechnology">Our world’s technology is advancing by the minute: learn the basics of new world technology!
+        Stop getting stuck on screen luminosity too bright or becoming embarrassed for not knowing how to use the microwave at work. - co-developer Loriana G. Maxim</string>
+
+
+    <!-- CRITICAL THINKING-RELATED STRINGS -->
+
+    <string name="txtDescriptionCriticalThinking"> The ability to reason logically is an essential skill required in our lives: Learn how to properly conceptualize, apply and analyze incoming information
+     in order to reach an answer or a conclusion, this skill will help formulate our beliefs by using logical thinking and reason </string>
+
+    <!-- CODING-RELATED STRINGS -->
+
+    <string name="txtDescriptionCoding">Computer programming is the process of designing and building an executable computer program for accomplishing a specific computing task. Programming involves tasks such as: analysis, generating algorithms, profiling algorithms accuracy and resource consumption, and the implementation of algorithms in a chosen programming language (commonly referred to as coding). The source code of a program is written in one or more languages. The purpose of programming is to find a sequence of instructions that will automate the performance of a task on a computer, often for solving a given problem. The process of programming thus often requires expertise in several different subjects, including knowledge of the application domain, specialized algorithms, and formal logic.Tasks accompanying and related to programming include: testing, debugging, source code maintenance, implementation of build systems, and management of derived artifacts, such as the machine code of computer programs. These might be considered part of the programming process, but often the term software development is used for this larger process with the term programming, implementation, or coding reserved for the actual writing of code. Software engineering combines engineering techniques with software development practices. </string>
+
+    <!-- PAINTING-RELATED STRINGS -->
+
+    <string name="txtDescriptionPainting">Painting is the practice of applying paint, pigment, color or other medium to a solid surface (support base). The medium is commonly applied to the base with a brush, but other implements, such as knives, sponges, and airbrushes, can be used. The final work is also called a painting.</string>
+
+    <!-- SELF-DEFENSE-RELATED STRINGS -->
+
+    <string name="txtDescriptionSelfDefense">Self-defense is crucial skill to learn which involves defending the health and the well-being of oneself from potential dangers or harm. The use of physical self-defence is to counter immediate threat of violence</string>
+
+    <string name="txtDescriptionMusic">Music is an art form and cultural activity whose medium is sound organized in time. General definitions of music include common elements such as pitch (which governs melody and harmony), rhythm (and its associated concepts tempo, meter, and articulation), dynamics (loudness and softness), and the sonic qualities of timbre and texture (which are sometimes termed the "color" of a musical sound). Different styles or types of music may emphasize, de-emphasize or omit some of these elements.</string>
+
+    <!-- Sculpting-RELATED STRINGS -->
+
+    <string name="txtDescriptionSculpting">Sculpture is the branch of the visual arts that operates in three dimensions. It is one of the plastic arts. Durable sculptural processes originally used carving and modelling, in stone, metal, ceramics, wood and other materials but, since Modernism, there has been an almost complete freedom of materials and process.</string>
+
+
+    <string name="temp"></string>
+    <string name="txtSkillName">SkillName</string>
+    <string name="title_activity_study_place">Map</string>
+    <string name="title_activity_study_maps">Map</string>
+    <string name="find_study_places">Find Study Places</string>
+    <string name="type_location_name_here">type location name here</string>
+    <string name="search">SEARCH</string>
+    <string name="list_of_ebooks">List of eBooks</string>
+    <string name="read">Read</string>
+    <string name="mark_as_read">mark as read</string>
+    <string name="favorites">favorites</string>
+
+
+    <!--quiz button-->
+    <string name="quiz">Test Your Knowledge with a Quiz!</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="test_text">test text</string>
+    <string name="test_lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="list_of_videos">List of Videos</string>
+    <string name="submit_answers">submit answers</string>
+    <string name="perscentage">perscentage</string>
+    <string name="grade">Grade</string>
+    <string name="difficulty">Difficulty</string>
+
+    <!--Quizz-->
+    <string name="critical_thinking_quiz_title">Critical Thinking Quizzes</string>
+    <string name="law_quiz_title">Law Quizzes</string>
+    <string name="coding_quiz_title">Coding Quizzes</string>
+    <string name="technology_quiz_title">Technology Quizzes</string>
+    <string name="painting_quiz_title">Painting Quizzes</string>
+    <string name="sculpting_quiz_title">Sculpting Quizzes</string>
+    <string name="music_quiz_title">Music Quizzes</string>
+    <string name="self_defense_quiz_title">Self Defense Quizzes</string>
+
+    <string name="title">Title:</string>
+    <string name="description">Description:</string>
+    <string name="skill_notes">Skill Notes</string>
+    <string name="add_an_entry">Add An Entry</string>
+    <string name="add">Add</string>
+
+    <string name="author">Author:</string>
+    <string name="choose_a_side">Choose a Side</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit_an_entry">Edit An Entry</string>
+
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#78CCFF</color>
+    <color name="colorPrimaryDark">#27379C</color>
+    <color name="colorAccent">#8192F7</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#ECF0F1</color>
+
+    <color name="easy">#00FF00</color>
+    <color name="medium">#0000FF</color>
+    <color name="hard">#FF0000</color>
+
+
+    <color name="easy_question">#4BBA21</color>
+    <color name="medium_question">#EAC441</color>
+    <color name="hard_question">#DB2626</color>
+
+
+
+
+</resources>

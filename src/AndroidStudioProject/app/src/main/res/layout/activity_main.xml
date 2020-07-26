@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activities.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:background="#78CCFF"
+    >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/item_main_menu"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            style="@style/TextStyles"/>
+
+        <Button
+            android:id="@+id/btnLearnSkill"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="15dp"
+            android:text="@string/btnLearnSkill"
+            android:layout_weight="1"
+            style="@style/MainButtonsStyle"
+
+            />
+
+        <Button
+            android:id="@+id/btnSkillJournal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="15dp"
+            android:text="@string/btnSkillJournal"
+            android:layout_weight="1"
+            style="@style/MainButtonsStyle"/>
+
+        <Button
+            android:id="@+id/btnStudyPlace"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="15dp"
+            android:text="@string/btnStudyPlace"
+            android:layout_weight="1"
+            style="@style/MainButtonsStyle"/>
+
+
+
+
+</LinearLayout>

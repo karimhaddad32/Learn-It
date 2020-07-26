@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="20dp"
+    android:elevation="25dp"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/test_text"
+            android:textSize="25sp"
+            android:paddingLeft="10dp"
+
+            />
+
+        <View
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <RadioButton
+                android:layout_margin="5dp"
+                android:id="@+id/radioFirstOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/test_text"
+                android:textSize="22sp"/>
+
+            <RadioButton
+                android:layout_margin="5dp"
+                android:id="@+id/radioSecondOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="@string/test_text"/>
+
+            <RadioButton
+                android:layout_margin="5dp"
+                android:id="@+id/radioThirdOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="@string/test_text"/>
+
+            <RadioButton
+                android:layout_margin="5dp"
+                android:id="@+id/radioFourthOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="@string/test_text"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

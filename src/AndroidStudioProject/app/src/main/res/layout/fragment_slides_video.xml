@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    tools:context=".views.fragments.VideosSlideFragment"
+    android:orientation="vertical"
+    android:weightSum="6">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:text="@string/txtMoreVideos"
+          android:gravity="center"
+          android:layout_weight="1.5"/>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:layout_weight="4.5">
+
+
+        <HorizontalScrollView
+            android:id="@+id/sliderVideos"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:background="@color/colorAccent"
+            android:layout_weight="19">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/videoOne"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:text="video1"
+                    android:background="@drawable/ic_media_play_light"/>
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <ImageButton
+            android:id="@+id/btnExpandVideos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="25dp"
+            android:background="@drawable/ic_media_play_light"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
