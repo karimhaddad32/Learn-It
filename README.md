@@ -6,4 +6,12 @@ The Quizz section in the app might give you unrelated questions to the subject. 
  
 
 It's a simple app, enjoy!
+
+# Contributors
+
+Karim Haddad
+
+Loriana G Maxim
+
+
  
